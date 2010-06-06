@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PrimitiveTypesWithSeveralContextsSpecs.cs" />
     <Compile Include="SpecUtils\SpecificationExtensions.cs" />
     <Compile Include="SpecUtils\SpecsBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

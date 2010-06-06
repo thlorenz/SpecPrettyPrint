@@ -1,0 +1,64 @@
+* TestsStructureSamples, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+   * TestsStructureSamples
+      * SpecsBase
+         * PrimitiveTypesSpecs
+           ¯ an uninitialized int should be 0
+           ¯ an uninitialized double should be 0.0
+           ¯ an uninitialized bool should be false
+           ¯ an int that was initialized to 1 should be 1
+           ¯ a double that was initialized to 1.2 should be 1.2
+           ¯ a bool that was initialized to true should be true
+           ¯ an uninitialized string should be null
+           ¯ a string that was initialized with "Hello World" should be "Hello World" 
+
+         * PrimitiveTypesWithSeveralContextsSpecs
+            * when primitives have not been initialized
+              ¯ an int should be 0
+              ¯ a bool should be false
+              ¯ a double should be 0.0
+              ¯ a string should be null
+
+            * Ctx PrimitivesInitialized
+               * when primitives were set to int 1 double 1.2 bool true string "Hello World" 
+                 ¯ an int should be 1
+                 ¯ a double should be 1.2
+                 ¯ a bool should be true
+                 ¯ a string should be "Hello World" 
+
+
+
+
+
+
+* TestsStructureSamples, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+   * TestsStructureSamples
+      * SpecsBase
+         * PrimitiveTypesSpecs
+           ¯ an uninitialized int should be 0
+           ¯ an uninitialized double should be 0.0
+           ¯ an uninitialized bool should be false
+           ¯ an int that was initialized to 1 should be 1
+           ¯ a double that was initialized to 1.2 should be 1.2
+           ¯ a bool that was initialized to true should be true
+           ¯ an uninitialized string should be null
+           ¯ a string that was initialized with "Hello World" should be "Hello World" 
+
+         * PrimitiveTypesWithSeveralContextsSpecs
+            * when primitives have not been initialized
+              ¯ an int should be 0
+              ¯ a bool should be false
+              ¯ a double should be 0.0
+              ¯ a string should be null
+
+            * Ctx PrimitivesInitialized
+               * when primitives were set to int 1 double 1.2 bool true string "Hello World" 
+                 ¯ an int should be 1
+                 ¯ a double should be 1.2
+                 ¯ a bool should be true
+                 ¯ a string should be "Hello World" 
+
+
+
+
+
+
