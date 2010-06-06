@@ -5,10 +5,11 @@ open TestMethodsExtractor
 
 module main = 
      
-     // let fullPath = @"C:\Users\TLorenz\Documents\Visual Studio 2008\Projects\FSharp\SpecPrettyPrint\src\TestsStructureSamples\bin\Debug\TestsStructureSamples.dll"
-     
     [<EntryPoint>]
     let main(args:string[]) =
+        
+        // let args = [@"C:\Users\TLorenz\Documents\Visual Studio 2008\Projects\FSharp\SpecPrettyPrint\src\TestsStructureSamples\bin\Debug\TestsStructureSamples.dll"]
+        
         if args.Length = 0 then printfn "usage: SpecPrettyPrint \"fullPathToTests1.dll\" \"fullPathToTests2.dll\"" 
         
         try

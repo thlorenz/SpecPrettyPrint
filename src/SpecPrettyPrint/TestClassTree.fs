@@ -41,17 +41,19 @@ type Node (name : string, ply : int) =
         let indent =
             let rec getIndentFor = function
                 | 0   -> ""
-                | ply -> "   " + getIndentFor (ply - 1)
+                | ply -> "|   " + getIndentFor (ply - 1)
             getIndentFor _ply    
             
         let sb = new StringBuilder()
-        sb.AppendLine(indent + "* " + x.Name) |> ignore
+        sb.AppendLine(indent + "+ " + x.Name) |> ignore
         
         for testMethod in x.TestMethods do 
-            sb.AppendLine(indent + "  » " + testMethod) |> ignore
+            sb.AppendLine(indent + "|") |> ignore
+            sb.AppendLine(indent + "|   » " + testMethod) |> ignore
         
         for childNode in x.Children do
-            sb.AppendLine(childNode.ToString()) |> ignore
+            sb.AppendLine(indent + "|") |> ignore
+            sb.Append(childNode.ToString()) |> ignore
         
         sb.ToString()
     
